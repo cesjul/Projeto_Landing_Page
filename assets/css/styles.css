@@ -519,6 +519,14 @@ table{
     }
     
 }
+@media (max-width: 555px){
+    .intro-text-forms{
+        text-align: start;
+    }
+    div.intro-img{
+        align-items: start;
+    }
+}
 
 @media (max-width: 375px){
     .forms-input input,
