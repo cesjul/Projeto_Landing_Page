@@ -79,6 +79,7 @@ a{
 .white-bg{
     background-color: var(--white);
     color: var(--primary-color);
+    
 }
 
 .menu{
@@ -171,7 +172,7 @@ a{
 
 .top3-content{
     max-width: 70rem;
-    height: 100vh;
+    min-height: 100vh;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
@@ -466,3 +467,62 @@ table{
     font-weight: 600;
 }
 
+@media (max-width: 1200px){
+    .gallery-grid{
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 800px){
+    .intro-content{
+        grid-template-columns: 1fr;
+        top: -1.5rem
+    }
+    div.intro-img{
+        align-items: center;
+    }
+    .jobs-grid-items{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+    .flex-grid{
+        min-width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        
+    }
+    .gallery-grid{
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+    div.forms-content{
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+    .forms-img{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+    .intro-text-forms{
+        text-align: center;
+    }
+    .inner-grid{
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+@media (max-width: 375px){
+    .forms-input input,
+    .forms-input textarea{
+        box-sizing: border-box;
+    }
+}
